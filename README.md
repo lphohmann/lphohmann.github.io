@@ -7,6 +7,7 @@
 1. 
 2. 
 3. 
+
 ## MSc Bioinformatics - _Lund University, Sweden_ 
 1. 
 2. 
