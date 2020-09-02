@@ -1,10 +1,20 @@
-## MSc Bioinformatics - Lund University - Lennart Hohmann
-1. BINP11
-2. BINP16
+# Introduction
+- Name: Lennart Paul Hohmann
+- etc.
 
-## Welcome to GitHub Pages
+# Projects in Bioinformatics
+## BSc Biomedical Sciences - _Maastricht University, The Netherlands_
+1. 
+2. 
+3. 
+## MSc Bioinformatics - _Lund University, Sweden_ 
+1. 
+2. 
+3.
 
-You can use the [editor on GitHub](https://github.com/lphohmann/lphohmann.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Website maintenance
+
+Editing website: [editor on GitHub](https://github.com/lphohmann/lphohmann.github.io/edit/master/README.md)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
