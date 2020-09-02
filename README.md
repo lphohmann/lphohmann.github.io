@@ -1,4 +1,6 @@
-## MSc Bioinformatics - Lund University - Lennart Paul Hohmann
+## MSc Bioinformatics - Lund University - Lennart Hohmann
+1. BINP11
+2. BINP16
 
 ## Welcome to GitHub Pages
 
