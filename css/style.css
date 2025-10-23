@@ -1,49 +1,158 @@
+/* ========================
+   General Page Styles
+======================== */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117; /* very dark background */
+  color: #c9d1d9; /* light grey text */
   line-height: 1.6;
-  background: #f7f7f7;
-  color: #333;
 }
 
+a {
+  color: #58a6ff; /* bright cyan-blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Header & Navigation
+======================== */
 header {
-  background: #2c3e50;
-  padding: 1rem;
+  background-color: #161b22;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  margin: 0 1rem;
+nav li {
+  font-weight: 600;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+nav a {
+  color: #58a6ff;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #1abc9c; /* teal hover */
+}
+
+/* ========================
+   Sections
+======================== */
 section {
   padding: 4rem 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
-section h2 {
-  border-bottom: 2px solid #2c3e50;
+h1, h2, h3 {
+  color: #39ff14; /* bright green for headers, bio-science feel */
+}
+
+h2 {
+  border-bottom: 2px solid #1abc9c;
   padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ========================
+   About Section
+======================== */
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
   margin-bottom: 1rem;
 }
 
-img {
-  width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 1rem auto;
+/* ========================
+   Projects Section
+======================== */
+.project {
+  background-color: #161b22;
+  border-left: 4px solid #1abc9c;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 128, 0.2);
+}
+
+/* ========================
+   Skills Section
+======================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  border-top: 3px solid #1abc9c;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ========================
+   Conferences Section
+======================== */
+.conference {
+  background-color: #161b22;
+  border-left: 4px solid #39ff14;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.conference:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(57, 255, 20, 0.2);
+}
+
+/* ========================
+   Contact Section
+======================== */
+#contact a {
+  color: #58a6ff;
+}
+
+/* ========================
+   Footer (optional)
+======================== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #161b22;
+  color: #8b949e;
+}
