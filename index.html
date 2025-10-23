@@ -82,11 +82,9 @@
     <nav class="topnav">
         <ul>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
             <li><a href="#positions" class="nav-link">Positions</a></li>
-            <li><a href="#conferences" class="nav-link">Conferences</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#publications" class="nav-link">Publications</a></li>
         </ul>
     </nav>
@@ -131,38 +129,35 @@
     <section id="about" class="section">
         <h1>About</h1>
         <p>Bioinformatics PhD candidate exploring computational genomics and data-driven biology. I build <strong>reproducible pipelines</strong> and apply statistical methods to genomic data, specializing in single-cell analysis and scalable workflow development.</p>
+        <div class="education-boxes">
+            <div class="education-box">
+              <h4>BSc Biomedical Sciences</h4>
+              <p class="muted">Maastricht University, The Netherlands</p>
+            </div>
+            <div class="education-box">
+              <h4>MSc Bioinformatics</h4>
+              <p class="muted">Lund University, Sweden</p>
+            </div>
+          </div>          
     </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="grid">
-            <article class="card project">
-                <h3>PhD Basal scRNA-seq Pipeline</h3>
-                <p class="muted">A robust, reproducible pipeline for single-cell RNA-seq analysis, from raw data to differential expression.</p>
-                <ul>
-                    <li class="small">Tech Stack: <strong>Nextflow</strong>, R/Bioconductor, Docker</li>
-                    <li class="small">Impact: Used for core PhD research; handles batches of 50+ samples efficiently.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/PhD_Basal" target="_blank">View on GitHub</a></p>
-            </article>
-            <article class="card project">
-                <h3>Genome Assembly Tools</h3>
-                <p class="muted">Optimized workflows and scripts for *de novo* assembly, annotation, and batch processing of novel genomes.</p>
-                 <ul>
-                    <li class="small">Tech Stack: Snakemake, <strong>Python</strong>, HPC/SLURM</li>
-                    <li class="small">Impact: Automated process for high-throughput assembly, improving turnaround time by 30%.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/genome-assembly" target="_blank">View on GitHub</a></p>
-            </article>
-            <article class="card project">
-                <h3>Variant Analysis</h3>
-                <p class="muted">Pipelines for variant calling, filtering, and visualization with reproducible reports and quality control.</p>
-                <ul>
-                    <li class="small">Tech Stack: <strong>Nextflow</strong>, GATK, VCFtools</li>
-                    <li class="small">Impact: Established a standardized, version-controlled process for complex variant interpretation.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/variant-analysis" target="_blank">View on GitHub</a></p>
-            </article>
+    <section id="positions" class="section">
+        <h2>Positions</h2>
+        <div class="timeline timeline-simple">
+            <div class="timeline-item">
+                <div class="content card">
+                    <h4>Current: PhD candidate — Lund University</h4>
+                    <p class="muted">2022 – Present</p>
+                    <p class="muted">Doctoral research in computational genomics and single-cell analysis. Developed core laboratory pipelines.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content card">
+                    <h4>Visiting Researcher — Statistical Methods for Precision Medicine, Paris</h4>
+                    <p class="muted">2023 (6 Months)</p>
+                    <p class="muted">Collaboration focusing on developing statistical models for large-scale clinical genomic data.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -220,80 +215,54 @@
         </div>
     </section>
 
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="grid" style="grid-template-columns: 1fr;">
-            <div class="card">
-                <h3>PhD Candidate — Lund University</h3>
-                <p class="muted">2022 – Present</p>
-                <p class="muted">Doctoral research in bioinformatics and computational genomics. Focus on scRNA-seq pipelines and reproducible analysis.</p>
-            </div>
-            <div class="card">
-                <h3>MSc Bioinformatics — [Institution Name]</h3>
-                <p class="muted">2020 – 2022</p>
-                <p class="muted">Thesis on comparative genomics. Focus on algorithm design and data visualization.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="positions" class="section">
-        <h2>Positions</h2>
-        <div class="timeline timeline-simple">
-            <div class="timeline-item">
-                <div class="content card">
-                    <h4>Current: PhD candidate — Lund University</h4>
-                    <p class="muted">2022 – Present</p>
-                    <p class="muted">Doctoral research in computational genomics and single-cell analysis. Developed core laboratory pipelines.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="content card">
-                    <h4>Visiting Researcher — Statistical Methods for Precision Medicine, Paris</h4>
-                    <p class="muted">2023 (6 Months)</p>
-                    <p class="muted">Collaboration focusing on developing statistical models for large-scale clinical genomic data.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="conferences" class="section">
-        <h2>Conferences</h2>
-        <div class="grid" style="grid-template-columns: 1fr;">
-            <div class="card conference">
-                <h3>International Bioinformatics Conference 2024</h3>
-                <p class="muted">Presented work on single-cell RNA-seq pipeline development.</p>
-                <a href="pdfs/IBIC_2024_Poster.pdf" target="_blank" class="poster-link" aria-label="View poster thumbnail">
-                    <img src="images/poster-1-thumb.jpg" alt="IBIC 2024 Poster Thumbnail">
-                    <p class="small">Click to Enlarge / Download PDF</p>
-                </a>
-            </div>
-            <div class="card conference">
-                <h3>Genome Analysis Meeting 2023</h3>
-                <p class="muted">Presented findings on variant calling workflows and quality control metrics.</p>
-                <a href="pdfs/GAM_2023_Poster.pdf" target="_blank" class="poster-link" aria-label="View poster thumbnail">
-                    <img src="images/poster-2-thumb.jpg" alt="GAM 2023 Poster Thumbnail">
-                    <p class="small">Click to Enlarge / Download PDF</p>
-                </a>
-            </div>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <article class="card project">
+                <h3>PhD Basal scRNA-seq Pipeline</h3>
+                <p class="muted">A robust, reproducible pipeline for single-cell RNA-seq analysis, from raw data to differential expression.</p>
+                <ul>
+                    <li class="small">Tech Stack: <strong>Nextflow</strong>, R/Bioconductor, Docker</li>
+                    <li class="small">Impact: Used for core PhD research; handles batches of 50+ samples efficiently.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/PhD_Basal" target="_blank">View on GitHub</a></p>
+            </article>
+            <article class="card project">
+                <h3>Genome Assembly Tools</h3>
+                <p class="muted">Optimized workflows and scripts for *de novo* assembly, annotation, and batch processing of novel genomes.</p>
+                 <ul>
+                    <li class="small">Tech Stack: Snakemake, <strong>Python</strong>, HPC/SLURM</li>
+                    <li class="small">Impact: Automated process for high-throughput assembly, improving turnaround time by 30%.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/genome-assembly" target="_blank">View on GitHub</a></p>
+            </article>
+            <article class="card project">
+                <h3>Variant Analysis</h3>
+                <p class="muted">Pipelines for variant calling, filtering, and visualization with reproducible reports and quality control.</p>
+                <ul>
+                    <li class="small">Tech Stack: <strong>Nextflow</strong>, GATK, VCFtools</li>
+                    <li class="small">Impact: Established a standardized, version-controlled process for complex variant interpretation.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/variant-analysis" target="_blank">View on GitHub</a></p>
+            </article>
         </div>
     </section>
 
     <section id="publications" class="section">
         <h2>Publications</h2>
-        <div class="grid" style="grid-template-columns: 1fr;">
-            <div class="card publication">
-                <h3>Title of Publication 1: A Scalable Nextflow Approach to scRNA-seq</h3>
-                <p class="muted"><strong>Journal Name</strong>, Year. DOI: <a href="https://doi.org/..." target="_blank">10.xxxx/yyyyy</a></p>
-                <p>Led the computational methods and software development, creating the analytical pipeline used to process all primary data.</p>
-            </div>
-            <div class="card publication">
-                <h3>Title of Publication 2 (Pre-print): Variant Prioritization via ML</h3>
-                <p class="muted"><strong>BioRxiv/MedRxiv</strong>, Year. DOI: <a href="https://doi.org/..." target="_blank">10.xxxx/zzzzz</a></p>
-                <p>Developed and validated the machine learning model for identifying high-risk genetic variants in the cohort.</p>
-            </div>
+      
+        <div class="pub-item">
+          <h3>Computational analysis of cellular heterogeneity in cancer</h3>
+          <p><strong>Hohmann L.</strong> et al. (2024). <em>Bioinformatics Journal</em>.</p>
         </div>
-        <p class="muted-note">For a complete list, please see my <a href="https://orcid.org/0000-0001-2345-6789" target="_blank">ORCID profile</a>.</p>
-    </section>
+      
+        <div class="pub-item">
+          <h3>Integrative genomics of rare disease variants</h3>
+          <p><strong>Hohmann L.</strong> et al. (2023). <em>Nature Communications</em>.</p>
+        </div>
+      </section>
+      
+      
 
 </main>
 <script src="js/script.js"></script>

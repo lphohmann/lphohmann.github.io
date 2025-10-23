@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Optional: unlock audio on first click so hover sounds can play afterward
   // (Use a relative path; place the WAV in /sounds/hover.wav in your repo)
-  const enableHoverSound = true; // set to true if you want hover sound (and have the file)
+  const enableHoverSound = false; // set to true if you want hover sound (and have the file)
   let hoverSound;
   if (enableHoverSound) {
     hoverSound = new Audio('sounds/hover.mp3');
