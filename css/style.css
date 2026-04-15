@@ -20,8 +20,8 @@ body {
   font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
   background: var(--bg-1);
   color: var(--text);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-webkit-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
 }
 
@@ -41,13 +41,13 @@ a:hover { color: var(--accent-2); text-decoration: underline; }
 }
 
 .topnav ul {
-  display:flex;
+  display: flex;
   gap: 24px;
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding: 12px 20px;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
 .topnav a {
@@ -150,7 +150,6 @@ h3 {
 #publications .card { margin-bottom: var(--card-spacing); }
 #publications .card:last-child { margin-bottom: 0; }
 
-
 .skills-grid {
   display: grid;
   gap: var(--card-spacing);
@@ -158,20 +157,20 @@ h3 {
 }
 
 .skill-category.card {
-    background: var(--card);
-    border: 1px solid rgba(26, 188, 156, 0.3); /* Accent border for subtle coloring */
-    border-left: 6px solid var(--accent); /* Stronger accent bar */
-    padding: 16px;
-    box-shadow: 0 4px 10px rgba(26, 188, 156, 0.1);
+  background: var(--card);
+  border: 1px solid rgba(26, 188, 156, 0.3); /* Accent border for subtle coloring */
+  border-left: 6px solid var(--accent); /* Stronger accent bar */
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.1);
 }
 
 .skill-category h4 {
-    color: var(--accent);
-    font-weight: 700;
+  color: var(--accent);
+  font-weight: 700;
 }
+
 .skill-category ul { list-style: none; padding: 0; margin: 0; }
 .skill-category ul li { padding: 3px 0; color: var(--text); font-size: 0.9rem; }
-
 
 /* ---------------------------
    Profile card (fixed on left)
@@ -180,8 +179,6 @@ h3 {
   background: var(--card);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  
-  /* Positioning remains the same */
   width: 320px;
   position: fixed;
   left: 32px;
@@ -191,27 +188,28 @@ h3 {
   backdrop-filter: blur(4px);
   z-index: 60;
 }
+
 .contact-link { color: var(--accent); }
 .contact-link:hover { color: var(--accent-2); }
-
 
 /* ---------------------------
    Projects (Non-indented lists)
 ---------------------------- */
 .project p { color: var(--muted); margin-bottom: 4px; }
 .project ul { list-style: none; padding-left: 0; margin: 10px 0; }
+
 .project ul li.small {
-    padding-left: 0;
-    text-indent: 0;
-    font-size: 0.88rem;
-    color: var(--muted);
-    margin-bottom: 4px;
-    line-height: 1.4;
+  padding-left: 0;
+  text-indent: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+  line-height: 1.4;
 }
+
 .project ul li.small::before { content: ""; display: none; }
 .project p a { color: var(--accent); font-weight: 600; }
 .project p a:hover { color: var(--accent-2); text-decoration: underline; }
-
 
 /* ---------------------------
    Positions (Timeline)
@@ -229,11 +227,10 @@ h3 {
 .timeline-item .content p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
 .timeline-item .content p.muted:nth-of-type(1) { 
-    font-style: italic;
-    font-size: 0.85rem;
-    margin-bottom: 6px;
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
 }
-
 
 /* ---------------------------
    Publications
@@ -321,7 +318,6 @@ h3 {
   color: var(--muted);
 }
 
-
 /* ---------------------------
    Enhanced Skills Section
 ---------------------------- */
@@ -351,6 +347,96 @@ h3 {
   .container {
     margin: 18px auto;
     padding-bottom: 40px;
+  }
+}
+
+/* Mobile refinements */
+@media (max-width: 640px) {
+  .topnav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .topnav a {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .profile-card {
+    margin: 12px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .profile-photo {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px auto;
+  }
+
+  .name,
+  .role,
+  .profile-bio,
+  .contact-list {
+    text-align: center;
+  }
+
+  .contact-link {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card,
+  #publications .pub-item {
+    padding: 16px;
+  }
+
+  .education-boxes {
+    flex-direction: column;
+  }
+
+  .education-box {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .project a,
+  .contact-link,
+  .topnav a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Disable hover lift on touch devices */
+@media (hover: none) {
+  .card:hover,
+  #publications .pub-item:hover,
+  .education-box:hover {
+    transform: none;
+    box-shadow: var(--shadow);
   }
 }
 
