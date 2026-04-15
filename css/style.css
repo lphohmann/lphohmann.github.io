@@ -30,6 +30,7 @@ a:hover { color: var(--accent-2); text-decoration: underline; }
 
 /* ---------------------------
    Top navigation
+   Desktop / default nav behavior
 ---------------------------- */
 .topbar {
   position: sticky;
@@ -350,16 +351,38 @@ h3 {
   }
 }
 
-/* Mobile refinements */
+/* ---------------------------
+   Mobile refinements
+---------------------------- */
 @media (max-width: 640px) {
+  /* Make top navigation horizontally scrollable on small screens */
+  .topnav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Hide scrollbar in WebKit browsers */
+  .topnav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Keep nav items on a single row and allow side scrolling */
   .topnav ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 10px;
+    width: max-content;
+    min-width: 100%;
     padding: 10px 12px;
   }
 
+  /* Keep each nav item on one line */
   .topnav a {
-    font-size: 0.9rem;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    font-size: 0.95rem;
     padding: 8px 10px;
   }
 
@@ -430,7 +453,9 @@ h3 {
   }
 }
 
-/* Disable hover lift on touch devices */
+/* ---------------------------
+   Disable hover lift on touch devices
+---------------------------- */
 @media (hover: none) {
   .card:hover,
   #publications .pub-item:hover,
@@ -440,6 +465,9 @@ h3 {
   }
 }
 
+/* ---------------------------
+   Print styles
+---------------------------- */
 @media print {
   body { background: #fff; color: #000; }
   .profile-card { position: static; width: auto; box-shadow: none; border: none; }
