@@ -95,7 +95,7 @@
     <h2 class="name">Lennart Hohmann</h2>
     <p class="role">Bioinformatics PhD candidate</p>
     <div class="profile-bio">
-        <p>Translational Genomics • Predictive Modeling for Cancer Recurrence • Data Pipelines & Statistical Analysis</p>
+        <p>Translational Genomics • Predictive Modeling for Cancer Recurrence</p>
     </div>
     <div class="contact-list" aria-label="Contact information">
         <p>
@@ -127,7 +127,7 @@
 <main class="container"> 
     <section id="about" class="section">
         <h1>About</h1>
-        <p>I am a Bioinformatician & PhD candidate in translational cancer research at Lund University (Breast Cancer Research Group) in Sweden and Institut Curie (U1331 Statistical Methods for Precision Medicine) in France. I investigate patients using multi-omics profiles to identify novel therapeutic targets, guiding the tailoring of strategies for better therapy outcomes. Additionally, I design reproducible, scalable pipelines and apply statistical and machine learning methods for predictive modeling of cancer recurrence and risk stratification, delivering actionable insights from complex datasets.</p>
+        <p>I am a Bioinformatician & PhD candidate in translational cancer research at Lund University (Breast Cancer Research Group) in Sweden and Institut Curie (U1331 Statistical Methods for Precision Medicine) in France. I investigate patients using multi-omics profiles to identify novel therapeutic targets, guiding the tailoring of strategies for better therapy outcomes, delivering actionable insights from complex datasets. Additionally, I design reproducible, scalable pipelines and apply machine learning methods for predictive modeling of cancer recurrence and risk stratification.</p>
         <div class="education-boxes">
             <div class="education-box">
               <h4>BSc Biomedical Sciences</h4>
@@ -135,6 +135,10 @@
             </div>
             <div class="education-box">
               <h4>MSc Bioinformatics</h4>
+              <p class="muted">Lund University, Sweden</p>
+            </div>
+              <div class="education-box">
+              <h4>PhD</h4>
               <p class="muted">Lund University, Sweden</p>
             </div>
           </div>          
@@ -157,6 +161,39 @@
                     <p class="muted">Research focused on survival modeling and predictive analytics for cancer recurrence, using large-scale global DNA-methylation data.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <article class="card project">
+                <h3>PhD Basal scRNA-seq Pipeline</h3>
+                <p class="muted">A robust, reproducible pipeline for single-cell RNA-seq analysis, from raw data to differential expression.</p>
+                <ul>
+                    <li class="small">Tech Stack: <strong>Nextflow</strong>, R/Bioconductor, Docker</li>
+                    <li class="small">Impact: Used for core PhD research; handles batches of 50+ samples efficiently.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/PhD_Basal" target="_blank">View on GitHub</a></p>
+            </article>
+            <article class="card project">
+                <h3>Genome Assembly Tools</h3>
+                <p class="muted">Optimized workflows and scripts for *de novo* assembly, annotation, and batch processing of novel genomes.</p>
+                 <ul>
+                    <li class="small">Tech Stack: Snakemake, <strong>Python</strong>, HPC/SLURM</li>
+                    <li class="small">Impact: Automated process for high-throughput assembly, improving turnaround time by 30%.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/genome-assembly" target="_blank">View on GitHub</a></p>
+            </article>
+            <article class="card project">
+                <h3>Variant Analysis</h3>
+                <p class="muted">Pipelines for variant calling, filtering, and visualization with reproducible reports and quality control.</p>
+                <ul>
+                    <li class="small">Tech Stack: <strong>Nextflow</strong>, GATK, VCFtools</li>
+                    <li class="small">Impact: Established a standardized, version-controlled process for complex variant interpretation.</li>
+                </ul>
+                <p><a href="https://github.com/lphohmann/variant-analysis" target="_blank">View on GitHub</a></p>
+            </article>
         </div>
     </section>
 
@@ -211,39 +248,6 @@
                     <li><strong>SQL</strong> (Postgres)</li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="grid">
-            <article class="card project">
-                <h3>PhD Basal scRNA-seq Pipeline</h3>
-                <p class="muted">A robust, reproducible pipeline for single-cell RNA-seq analysis, from raw data to differential expression.</p>
-                <ul>
-                    <li class="small">Tech Stack: <strong>Nextflow</strong>, R/Bioconductor, Docker</li>
-                    <li class="small">Impact: Used for core PhD research; handles batches of 50+ samples efficiently.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/PhD_Basal" target="_blank">View on GitHub</a></p>
-            </article>
-            <article class="card project">
-                <h3>Genome Assembly Tools</h3>
-                <p class="muted">Optimized workflows and scripts for *de novo* assembly, annotation, and batch processing of novel genomes.</p>
-                 <ul>
-                    <li class="small">Tech Stack: Snakemake, <strong>Python</strong>, HPC/SLURM</li>
-                    <li class="small">Impact: Automated process for high-throughput assembly, improving turnaround time by 30%.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/genome-assembly" target="_blank">View on GitHub</a></p>
-            </article>
-            <article class="card project">
-                <h3>Variant Analysis</h3>
-                <p class="muted">Pipelines for variant calling, filtering, and visualization with reproducible reports and quality control.</p>
-                <ul>
-                    <li class="small">Tech Stack: <strong>Nextflow</strong>, GATK, VCFtools</li>
-                    <li class="small">Impact: Established a standardized, version-controlled process for complex variant interpretation.</li>
-                </ul>
-                <p><a href="https://github.com/lphohmann/variant-analysis" target="_blank">View on GitHub</a></p>
-            </article>
         </div>
     </section>
 
